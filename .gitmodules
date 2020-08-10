@@ -1,12 +1,12 @@
 [submodule "Ntreev.Library"]
 	path = Ntreev.Library
-	url = ../s2quake/Ntreev.Library.git
+	url = ../../s2quake/Ntreev.Library.git
 [submodule "Ntreev.Library.Commands"]
 	path = Ntreev.Library.Commands
-	url = ../s2quake/CommandLineParser.git
+	url = ../../s2quake/CommandLineParser.git
 [submodule "JSSoft.Font"]
 	path = JSSoft.Font
-	url = ../s2quake/JSSoft.Font.git
+	url = ../../s2quake/JSSoft.Font.git
 [submodule "Ntreev.ModernUI.Framework"]
 	path = Ntreev.ModernUI.Framework
-	url = ../s2quake/Ntreev.ModernUI.Framework.git
+	url = ../../s2quake/Ntreev.ModernUI.Framework.git
