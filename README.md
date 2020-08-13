@@ -16,7 +16,7 @@ FreeType Based Font Texture Generator
 
     git clone https://github.com/s2quake/font-generator.git --recursive
     cd font-generator
-    dotnet restore
+    dotnet restore ./JSSoft.Font
     dotnet build --framework netcoreapp3.1 ./JSSoft.Font
     dotnet run --framework netcoreapp3.1 --project ./JSSoft.Font/JSSoft.Font.ApplicationHost
 
