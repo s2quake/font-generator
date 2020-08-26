@@ -22,7 +22,7 @@ git clone https://github.com/s2quake/font-generator.git --recursive
 # change directory
 cd font-generator
 # build
-dotnet build ./JSSoft.Font/ --framework netcoreapp3.1
+dotnet build --framework netcoreapp3.1
 # run
 dotnet run --project ./JSSoft.Font/JSSoft.Font.ApplicationHost --framework netcoreapp3.1
 ```
