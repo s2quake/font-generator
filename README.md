@@ -26,3 +26,7 @@ dotnet build --framework netcoreapp3.1
 # run
 dotnet run --project ./JSSoft.Font/JSSoft.Font.ApplicationHost --framework netcoreapp3.1
 ```
+
+## Redistributable
+
+https://www.microsoft.com/en-us/download/confirmation.aspx?id=14632
