@@ -6,7 +6,7 @@ try {
         "./JSSoft.Library/Directory.Build.props",
         "./JSSoft.Library.Commands/Directory.Build.props",
         "./JSSoft.ModernUI.Framework/Directory.Build.props",
-        "./JSSoft.Font/Directory.Build.props"
+        "./JSSoft.Fonts/Directory.Build.props"
     ) | ForEach-Object { "`"$_`"" }
     $propsPath = $propsPath -join ","
     $solutionPath = "./font-generator.sln"
