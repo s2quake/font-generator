@@ -1,12 +1,12 @@
-[submodule "JSSoft.Font"]
-	path = JSSoft.Font
-	url = ../../s2quake/JSSoft.Font.git
 [submodule "JSSoft.Library"]
 	path = JSSoft.Library
-	url = ../../s2quake/JSSoft.Library.git
+	url = https://github.com/s2quake/JSSoft.Library.git
 [submodule "JSSoft.Library.Commands"]
 	path = JSSoft.Library.Commands
-	url = ../../s2quake/JSSoft.Library.Commands.git
+	url = https://github.com/s2quake/JSSoft.Library.Commands.git
 [submodule "JSSoft.ModernUI.Framework"]
 	path = JSSoft.ModernUI.Framework
-	url = ../../s2quake/JSSoft.ModernUI.Framework.git
+	url = https://github.com/s2quake/JSSoft.ModernUI.Framework.git
+[submodule "JSSoft.Fonts"]
+	path = JSSoft.Fonts
+	url = https://github.com/s2quake/JSSoft.Fonts.git
