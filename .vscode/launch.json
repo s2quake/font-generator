@@ -8,9 +8,9 @@
             "name": "Launch",
             "type": "coreclr",
             "request": "launch",
-            "program": "${workspaceFolder}/bin/Debug/netcoreapp3.1/JSSoft.Font.ApplicationHost/jsFontApp.dll",
+            "program": "${workspaceFolder}/bin/Debug/netcoreapp3.1/JSSoft.Fonts.ApplicationHost/jsFontApp.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/bin/Debug/netcoreapp3.1/JSSoft.Font.ApplicationHost",
+            "cwd": "${workspaceFolder}/bin/Debug/netcoreapp3.1/JSSoft.Fonts.ApplicationHost",
             "stopAtEntry": false
         }
     ]
