@@ -5,12 +5,21 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch",
+            "name": "Launch-App",
             "type": "coreclr",
             "request": "launch",
             "program": "${workspaceFolder}/bin/Debug/netcoreapp3.1/JSSoft.Fonts.ApplicationHost/jsFontApp.dll",
             "args": [],
             "cwd": "${workspaceFolder}/bin/Debug/netcoreapp3.1/JSSoft.Fonts.ApplicationHost",
+            "stopAtEntry": false
+        },
+        {
+            "name": "Launch-Console",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/Debug/netcoreapp3.1/JSSoft.Fonts.ConsoleHost/jsFont.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/bin/Debug/netcoreapp3.1/JSSoft.Fonts.ConsoleHost",
             "stopAtEntry": false
         }
     ]
