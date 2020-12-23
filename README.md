@@ -34,6 +34,12 @@ Because you cannot build a WPF project in a Linux environment, select and build 
 dotnet build ./JSSoft.Fonts/JSSoft.Fonts.ConsoleHost --framework netcoreapp3.1 --configuration Release
 ```
 
+or
+
+```console
+dotnet ./bin/Release/netcoreapp3.1/JSSoft.Fonts.ConsoleHost/jsfont.dll
+```
+
 ## Run
 
 ### Application(Windows Only)
@@ -45,10 +51,12 @@ dotnet run --project ./JSSoft.Fonts/JSSoft.Fonts.ApplicationHost --framework net
 or
 
 ```console
-dotnet ./exe/Release/netcoreapp3.1/application/jsfontApp.dll
+dotnet ./bin/Release/netcoreapp3.1/JSSoft.Fonts.ApplicationHost/jsfontApp.dll
 ```
 
 ### Console
+
+> 'libgdiplus' must be installed to run on Linux. See the topic 'Install libgdiplus on Linux' below.ㅍ
 
 ```console
 dotnet run --project ./JSSoft.Fonts/JSSoft.Fonts.ConsoleHost --framework netcoreapp3.1 --configuration Release
@@ -60,6 +68,28 @@ or
 dotnet ./exe/Release/netcoreapp3.1/console/jsfont.dll
 ```
 
+## Install libgdiplus on Linux
+
+macOS ([HomeBrew](https://brew.sh/))
+
+```console
+brew install mono-libgdiplus
+```
+
+Ubuntu
+
+```console
+sudo apt-get install libgdiplus
+```
+
+Other linux
+
+* Visit [Mono download site for Linux](https://www.mono-project.com/download/stable/#download-lin)
+
+* Run the '(1) Add the Mono repository to your system' entry on the appropriate Linux tab.
+
+* Then install 'libgdiplus' using each Linux installation command.
+
 ## Export Font Data and Textures
 
 ### Usage
@@ -70,13 +100,13 @@ dotnet jsfont.dll <font-path> <output-path>
 
 ### Requirements
 
-font-path
+\<font-path\>
 
 ```plain
 Indicates the font path.
 ```
 
-output-path
+\<output-path\>
 
 ```plain
 Indicates the output path.
