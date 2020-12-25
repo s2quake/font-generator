@@ -18,7 +18,7 @@ FreeType Based Font Texture Generator
 git clone https://github.com/s2quake/font-generator.git --recursive
 ```
 
-## Build
+## Build using dotnet
 
 ### Windows
 
@@ -34,12 +34,6 @@ Because you cannot build a WPF project in a Linux environment, select and build 
 dotnet build ./JSSoft.Fonts/JSSoft.Fonts.ConsoleHost --framework netcoreapp3.1 --configuration Release
 ```
 
-or
-
-```console
-dotnet ./bin/Release/netcoreapp3.1/JSSoft.Fonts.ConsoleHost/jsfont.dll
-```
-
 ## Run
 
 ### Application(Windows Only)
@@ -51,7 +45,7 @@ dotnet run --project ./JSSoft.Fonts/JSSoft.Fonts.ApplicationHost --framework net
 or
 
 ```console
-dotnet ./bin/Release/netcoreapp3.1/JSSoft.Fonts.ApplicationHost/jsfontApp.dll
+dotnet ./JSSoft.Fonts/JSSoft.Fonts.ApplicationHost/bin/Release/netcoreapp3.1/jsfontApp.dll
 ```
 
 ### Console
@@ -65,8 +59,18 @@ dotnet run --project ./JSSoft.Fonts/JSSoft.Fonts.ConsoleHost --framework netcore
 or
 
 ```console
-dotnet ./exe/Release/netcoreapp3.1/console/jsfont.dll
+dotnet ./JSSoft.Fonts/JSSoft.Fonts.ConsoleHost/bin/Release/netcoreapp3.1/jsfont.dll
 ```
+
+## Build using script
+
+[PowerShell](https://docs.microsoft.com/en-us/powershell/) 5.0 or later must be installed.
+
+You can build by running **build.bat** in Windows and **build.sh** in macOS or Linux.
+
+When built using a script, it is output to the **bin** path.
+
+> If there are modifications to that repository, it will not be built. Use the **-Force** option when this happens.
 
 ## Install libgdiplus on Linux
 
