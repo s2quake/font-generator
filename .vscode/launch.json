@@ -5,21 +5,23 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "launch-application",
+            "name": "launch-font-console",
             "type": "coreclr",
             "request": "launch",
-            "program": "${workspaceFolder}/exe/Debug/netcoreapp3.1/application/jsFontApp.dll",
+            "preLaunchTask": "build-console",
+            "program": "${workspaceFolder}/JSSoft.Fonts/JSSoft.Fonts.ConsoleHost/bin/Debug/netcoreapp3.1/jsfont.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/exe/Debug/netcoreapp3.1/application",
+            "cwd": "${workspaceFolder}/JSSoft.Fonts/JSSoft.Fonts.ConsoleHost/bin/Debug/netcoreapp3.1",
             "stopAtEntry": false
         },
         {
-            "name": "launch-console",
+            "name": "launch-font-application",
             "type": "coreclr",
             "request": "launch",
-            "program": "${workspaceFolder}/exe/Debug/netcoreapp3.1/console/jsFont.dll",
+            "preLaunchTask": "build-application",
+            "program": "${workspaceFolder}/JSSoft.Fonts/JSSoft.Fonts.ApplicationHost/bin/Debug/netcoreapp3.1/jsfontApp.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/exe/Debug/netcoreapp3.1/console",
+            "cwd": "${workspaceFolder}/JSSoft.Fonts/JSSoft.Fonts.ApplicationHost/bin/Debug/netcoreapp3.1",
             "stopAtEntry": false
         }
     ]

@@ -4,18 +4,8 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build-all",
+            "label": "build",
             "command": "dotnet build --framework netcoreapp3.1",
-            "type": "shell",
-            "group": "build",
-            "presentation": {
-                "reveal": "always"
-            },
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "build-application",
-            "command": "dotnet build --framework netcoreapp3.1 ./JSSoft.Fonts/JSSoft.Fonts.ApplicationHost",
             "type": "shell",
             "group": "build",
             "presentation": {
@@ -26,6 +16,16 @@
         {
             "label": "build-console",
             "command": "dotnet build --framework netcoreapp3.1 ./JSSoft.Fonts/JSSoft.Fonts.ConsoleHost",
+            "type": "shell",
+            "group": "build",
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build-application",
+            "command": "dotnet build --framework netcoreapp3.1 ./JSSoft.Fonts/JSSoft.Fonts.ApplicationHost",
             "type": "shell",
             "group": "build",
             "presentation": {
